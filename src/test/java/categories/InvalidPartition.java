@@ -1,5 +1,5 @@
 package categories;
 
-public interface invalidPartition {
+public interface InvalidPartition {
 
 }

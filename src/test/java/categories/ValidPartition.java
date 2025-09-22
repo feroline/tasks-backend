@@ -1,6 +1,6 @@
 package categories;
 
-public interface validPartition {
+public interface ValidPartition {
 
     
 }
