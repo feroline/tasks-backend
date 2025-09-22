@@ -6,8 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
-import categories.invalidPartition;
-import categories.validPartition;
+import categories.InvalidPartition;
+import categories.ValidPartition;
 
 /**
  * Black box tecniques of test, Equivalence Partition
@@ -16,7 +16,7 @@ import categories.validPartition;
 public class DateUtilsTest {
 
     @Test
-    @Category(validPartition.class)
+    @Category(ValidPartition.class)
     public void shouldReturnTrueToFutureDate() {
 
         LocalDate date = LocalDate.of(2100, 12, 05);
@@ -28,7 +28,7 @@ public class DateUtilsTest {
     }
 
     @Test
-    @Category(validPartition.class)
+    @Category(ValidPartition.class)
     public void shouldReturnTrueToPresentDate() {
 
         LocalDate date = LocalDate.now();
@@ -39,7 +39,7 @@ public class DateUtilsTest {
     }
 
     @Test
-    @Category(invalidPartition.class)
+    @Category(InvalidPartition.class)
     public void shouldReturnFalseToPastDate() {
 
         LocalDate date = LocalDate.of(1999, 12, 05);
